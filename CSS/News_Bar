@@ -1,0 +1,32 @@
+<!-- تتنسيق شريط الاخبار  -->
+<style>
+.notice-bar {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  background-color: #033678;
+}
+.notice-bar p {
+  position: absolute;
+  margin: 0;
+  line-height: 50px;
+  transform: translateY(100%);
+  animation: slideUp 20s linear infinite 0s;
+}
+.notice-bar p:nth-child(1) { animation-delay: 0s; }
+.notice-bar p:nth-child(2) { animation-delay: 5s; }
+.notice-bar p:nth-child(3) { animation-delay: 10s; }
+.notice-bar p:nth-child(4) { animation-delay: 15s; }
+
+@keyframes slideUp {
+  0%, 5% { transform: translateY(100%); }
+  10%, 30% { transform: translateY(0); }
+  35%, 100% { transform: translateY(-100%); }
+}
+[dir] .notice-bar .fr-view p:not(:last-child) {
+    margin-bottom: 0rem;
+}
+[dir] .notice-bar {
+    padding: 25px 0PX;
+}
+</style>
