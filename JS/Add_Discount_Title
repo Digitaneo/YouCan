@@ -1,4 +1,4 @@
-<!-- إضافة نسبة التخفيض للمنتجات -->
+<!-- إضافة نسبة التخفيض للعنوان -->
 <script>
     var dis_price = document.querySelector('div.product-section.price-section > h3 > span.before.currency-value') !== null;
     if (dis_price) {
