@@ -1,0 +1,51 @@
+<!-- تتنسيق الأجهزة الصغيرة  -->
+<style>
+@media (max-width: 425px) {
+    .content-box-with-icon-section .grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content-box-with-icon-section .icon {
+        display: block;
+        font-size: 25px;
+        height: 45px;
+        line-height: 45px;
+        width: 45px;
+    }
+    .products-grid {
+        grid-gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    [dir] .product-item .product-details {
+        border-top: 1px solid #f0f0f0;
+        padding: 11px 9px;
+        text-align: center;
+    }
+    .single-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    .products-style-2, .categories-style-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-box-with-icon-section .title {
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .content-box-with-icon-section .description {
+        font-size: 12px;
+        word-break: break-word;
+    }
+    .products-grid .product-item .product-actions .button {
+        min-width: 100%;
+    }
+    .slider-container {
+      height:30vw!important;
+    }
+}
+  
+  .product-item .product-actions .button {
+        border-radius: 25px;
+
+</style>
