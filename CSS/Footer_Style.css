@@ -1,7 +1,7 @@
 <!-- تنسيق ذيل الصفحة -->
 <style>
 .footer .footer-body {
-    background-color: var(--dark-primary-color);
+    background-color: #033678FF;
     border-radius: 15px;
     padding: 5px;
     color: var(--light-primary-color);
