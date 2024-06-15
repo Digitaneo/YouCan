@@ -1,6 +1,0 @@
-<!-- إخفاء شعار يوكان -->
-<style>
-#app + div span {
-    display: none;
-}
-</style>
