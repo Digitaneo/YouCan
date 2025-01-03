@@ -1,0 +1,41 @@
+<style>
+    /* حاوية الشريط الإخباري */
+    .news-ticker {
+        overflow: hidden; /* إخفاء الأجزاء الزائدة */
+        white-space: nowrap; /* تجنب التفاف النصوص */
+        position: relative;
+        height: 50px; /* تحديد ارتفاع الشريط */
+        display: flex;
+        align-items: center;
+        direction: ltr; /* جعل النصوص تبدأ من الشمال إلى اليمين */
+        width: 100%; /* ضمان أن الحاوية تغطي كامل العرض */
+    }
+
+    /* قائمة الأخبار */
+    .news-ticker ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        animation: ticker-scroll 20s linear infinite; /* تعديل سرعة الحركة */
+    }
+
+    .news-ticker li {
+        display: inline-block;
+        padding: 0 2em; /* المسافة بين العناصر */
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /* حركة الشريط من الشمال إلى اليمين */
+    @keyframes ticker-scroll {
+        0% {
+            transform: translateX(-100%); /* تبدأ الحركة من خارج الشاشة من الشمال */
+        }
+        100% {
+            transform: translateX(100%); /* تنتهي الحركة خارج الشاشة من اليمين */
+        }
+    }
+</style>
