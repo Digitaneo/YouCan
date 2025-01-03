@@ -1,0 +1,47 @@
+/* القائمة المنسدلة و الأسئلة الشائعة */
+summary {
+  background: #f7f7f7;
+  isolation: isolate;
+  padding: 1rem;
+  margin: 15px 0;
+  border-radius: 0.3rem;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+}
+
+details > summary::after,
+details[open] > summary::after {
+  position: absolute;
+  content: "+";
+  left: 8px;
+  top: 0;
+  font-size: 30px;
+}
+
+details[open] > summary::after {
+  content: "-";
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+  isolation: isolate;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
