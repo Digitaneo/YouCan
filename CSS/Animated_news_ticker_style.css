@@ -4,11 +4,11 @@
         overflow: hidden; /* إخفاء الأجزاء الزائدة */
         white-space: nowrap; /* تجنب التفاف النصوص */
         position: relative;
-        height: 50px; /* تحديد ارتفاع الشريط */
+        height: 40px; /* تحديد ارتفاع الشريط */
         display: flex;
         align-items: center;
         direction: ltr; /* جعل النصوص تبدأ من الشمال إلى اليمين */
-        width: 100%; /* ضمان أن الحاوية تغطي كامل العرض */
+        width: 102%; /* ضمان أن الحاوية تغطي كامل العرض */
     }
 
     /* قائمة الأخبار */
@@ -32,7 +32,7 @@
     /* حركة الشريط من الشمال إلى اليمين */
     @keyframes ticker-scroll {
         0% {
-            transform: translateX(-100%); /* تبدأ الحركة من خارج الشاشة من الشمال */
+            transform: translateX(-90%); /* تبدأ الحركة من خارج الشاشة من الشمال */
         }
         100% {
             transform: translateX(100%); /* تنتهي الحركة خارج الشاشة من اليمين */
