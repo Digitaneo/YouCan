@@ -1,5 +1,4 @@
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<script>
+
 /* حاوية الشريط الإخباري */
     .news-ticker {
         overflow: hidden; /* إخفاء الأجزاء الزائدة */
@@ -39,4 +38,3 @@
             transform: translateX(100%); /* تنتهي الحركة خارج الشاشة من اليمين */
         }
     }
-</script>
