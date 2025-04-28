@@ -1,4 +1,4 @@
-<!-- إضافة نسبة التخفيض على المنتجات للغة العربية RTL -->
+<!-- إضافة نسبة التخفيض على المنتجات -->
 <script>
   // تحقق مما إذا كانت هناك قيمة سعرية مُخفضة وأضف شارة التخفيض
   var dis_price = document.querySelector('div.product-section.price-section > h3 > span.before.currency-value') !== null;
@@ -22,7 +22,7 @@
           
           var discount_pp = document.createElement("span");
           discount_pp.setAttribute("class", "discount_pp");
-          discount_pp.style.direction = "ltr";
+          discount_pp.style.direction = "ltr"; // ⭐️ إضافة اتجاه LTR لحل المشكلة
           productItem[i].appendChild(discount_pp);
 
           var price_bef = productItem[i].querySelector("div.product-info > div > span.currency-value.before > span.value");
