@@ -8,6 +8,7 @@
             productItem[i].style.position = "relative";
             var discount_pp = document.createElement("span");
             discount_pp.setAttribute("class", "discount_pp");
+            discount_pp.style.direction = "ltr";
             productItem[i].appendChild(discount_pp);
             var price_bef = productItem[i].querySelector("div.product-info > div > span.currency-value.before > span.value");
             var price_aft = productItem[i].querySelector("div.product-info > div > span.currency-value.after > span.value");
